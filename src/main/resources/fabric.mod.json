@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 1,
+  "id": "vrrebinding",
+  "version": "${version}",
+  "name": "VrRebinding",
+  "description": "",
+  "authors": [],
+  "contact": {
+    "repo": "https://github.com/walksanator/VrRebinding"
+  },
+  "license": "All-Rights-Reserved",
+  "icon": "assets/vrrebinding/icon.png",
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      "net.walksanator.vrbind.client.VrRebindingClient"
+    ],
+    "main": [
+      "net.walksanator.vrbind.VrRebinding"
+    ]
+  },
+  "mixins": [
+    "vrrebinding.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric": "*",
+    "minecraft": "${minecraft_version}"
+  }
+}
